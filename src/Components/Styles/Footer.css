@@ -1,0 +1,52 @@
+#footer{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #220639fc !important;
+    margin-top: 50px;
+    max-width: 100%;
+}
+
+
+#btns{
+    display: flex;
+    justify-content: center;
+
+    button{
+        
+    border: 0;
+    background-color: transparent;
+    color: #ECDDF5;
+    padding: 10px;
+    transition: border 0.5s;
+    cursor: pointer;
+    }
+}
+.fa-heart{
+    color: #D6C376;
+}
+#para{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+#icons{
+    
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+
+  a{
+    i{
+        
+    font-size: 30px;
+    margin: 0px 20px;
+    text-decoration: none;
+    color: #551A8B !important;
+    }
+  }
+}
+

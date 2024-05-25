@@ -1,0 +1,116 @@
+#letsConnect{
+    font-family: "Aclonica", sans-serif !important;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 30px;
+
+        span{
+            color: #D6C376;
+        }
+}
+
+#contact{
+    margin-top: 130px;
+}
+
+#contactGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contactForm{
+    box-shadow: 0 2px 2px #551A8B;
+    padding: 70px;
+    margin: auto;
+    text-align: center;
+    padding-right: 100px;
+
+    input, textarea{
+        width: 100%;
+        padding: 20px;
+        background-color: #301744;
+        color: white;
+        border: none;
+    box-shadow: 0 2px 5px #551A8B;
+    }
+    
+    button{
+    background-color: transparent;
+    border: 1px solid rebeccapurple;
+    color: #ECDDF5;
+    padding: 10px;
+    transition: border 0.5s;
+    cursor: pointer;
+    border-radius: 60px;
+    margin-left: 30px;
+    }
+
+    form{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+#leftContact{
+    margin-top: 30px;
+    max-width: 100%;
+
+    p{
+        text-align: center;
+        line-height: 1.8;
+        /* font-family: "Cormorant Garamond", serif; */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+    }
+    #contactThank{
+        font-size: 20px !important;
+    }
+
+    .contacts{
+        border: 2px solid #301744;
+        padding: 20px 0px;
+        margin: 20px;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+        
+    }
+}
+
+
+
+@media (max-width:600px){
+
+    #letsConnect{
+        font-size: 30px !important;
+    }
+    #contactGrid{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto;
+        row-gap: 20px !important;
+    }
+    #leftContact{
+        p{
+            font-size: 10px !important;
+        }
+    }
+    #contactThank{
+        max-width: 70vw !important;
+        font-size: 15px !important;
+        margin: auto;
+    }
+    .contacts{
+        padding: 10px 0px !important;
+        max-width: 40vw !important;
+        margin: 11px auto !important;
+    }
+}
