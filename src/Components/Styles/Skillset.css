@@ -1,0 +1,53 @@
+#skills{
+    margin: 10px 50px;
+    .flex{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+    }
+    .purpleTools{
+        color: #D6C376;
+    }
+    .blackTools{
+        color: #FE2121;
+    }
+    .whiteTools{
+        color: #00247C;
+    }
+    h2{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size:25px;
+    }
+    .mySkillSet{  
+        font-family: "Aclonica", sans-serif !important;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+}
+
+#mySkillsDiv{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+
+
+
+
+@media (max-width: 600px){
+
+    .mySkillSet{
+      font-size: 30px !important;
+    }
+    .flex{
+        max-width: 50vw;
+        h2{
+            font-size: 14px !important;
+        }
+    }
+  }

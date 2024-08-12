@@ -1,0 +1,61 @@
+#extraDocs{
+    
+        font-family: "Aclonica", sans-serif !important;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 80px;
+        margin-top: 100px;
+
+    
+}
+
+.whiteExtraDocs a{
+    color: black;
+    border: 1px solid #BDBABA !important;
+    transition: border 0.5s ;
+}
+
+.whiteExtraDocs a:hover{
+    border: 1px solid #fdf4f4;
+    border-radius: 60px;
+}
+
+.blackExtraDocs a{
+    border: 2px solid #222121 !important;
+    transition: border 0.5s ;
+}
+
+.blackExtraDocs a:hover{
+    border: 1px solid #adacac;
+    border-radius: 60px;
+}
+
+.purpleExtraDocs a{
+    border: 1px solid #412657;  
+    transition: border 0.5s ;
+}
+
+.purpleExtraDocs a:hover{
+    border: 1px solid rebeccapurple;
+    border-radius: 60px;
+}
+
+.extraDocs{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 40%;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+    margin: auto;
+
+    a{
+        text-align: center;
+        padding: 20px;
+        font-size: larger;
+        border-radius: 30px;
+        min-width: 300px;
+    }
+
+    
+}

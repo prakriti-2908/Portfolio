@@ -1,23 +1,70 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Components/Home';
+import IntroEdu from './Components/IntroEdu';
+import Navbar from './Components/Navbar';
+import Projects from './Components/Projects';
+import Skillset from './Components/Skillset';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
+import ExtraDocs from './Components/ExtraDocs';
+import { createContext, useEffect, useState } from 'react';
+import ThemeChangerBtn from './Components/ThemeChangerBtn';
+
+export const ThemeContext = createContext();
 
 function App() {
+  const [theme, setTheme] = useState('black');
+
+  const changePurple = () => setTheme('purple');
+  const changeWhite = () => setTheme('white');
+  const changeBlack = () => setTheme('black');
+
+  useEffect(() => {
+    const themeStyles = {
+      white: {
+        backgroundColor: '#F2F2F2',
+        color: 'black',
+        scrollbarTrackColor: '#BDBABA',
+        scrollbarThumbColor: '#E2DFDF',
+      },
+      purple: {
+        backgroundColor: '#290942',
+        color: '#ECDDF5',
+        scrollbarTrackColor: '#180229',
+        scrollbarThumbColor: '#412657',
+      },
+      black: {
+        backgroundColor: '#010101',
+        color: 'white',
+        scrollbarTrackColor: '#302F2F',
+        scrollbarThumbColor: '#686767',
+      },
+    };
+
+    const { backgroundColor, color, scrollbarTrackColor, scrollbarThumbColor } = themeStyles[theme];
+    document.body.style.backgroundColor = backgroundColor;
+    document.body.style.color = color;
+
+    // Update custom properties for scrollbar styling
+    document.documentElement.style.setProperty('--scrollbar-track-color', scrollbarTrackColor);
+    document.documentElement.style.setProperty('--scrollbar-thumb-color', scrollbarThumbColor);
+
+    // Cursor styling code here (as discussed before)
+  }, [theme]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeContext.Provider value={{changePurple,changeWhite,changeBlack,theme}}>
+        <ThemeChangerBtn/>
+        <Navbar/>
+        <Home/>
+        <IntroEdu/>
+        <Skillset/>
+        <Projects/>
+        <ExtraDocs/>
+        <Contact/>
+        <Footer/>
+      </ThemeContext.Provider>
     </div>
   );
 }

@@ -1,0 +1,165 @@
+.purpleBgSkillCard{
+    background-color: #412657;
+}
+.blackBgSkillCard{
+    background-color: #222121;
+}
+
+.whiteBgSkillCard{
+    /* border: 5px solid #bdbaba; */
+    background-color: #e2dfdf;
+}
+
+.skillCard{
+    display: flex;
+    /* display: inline-block; */
+    justify-content: space-between;
+    width: 20%;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 50px;
+    transition: width 1s linear;
+    i{
+        font-size:90px;
+        margin-bottom: 10px;
+    }
+    .skillTitle{
+        text-align: center;
+    }
+    .js{
+        color: #FAC900;
+        /* background-color: #090909; */
+    }
+    .react{
+        color: #08D4F8;
+    }
+    .html5{
+        color: #DC4923;
+    }
+    .css{
+        color: #0A58CA;
+    }
+    .sass{
+        color: #D91A5F;
+    }
+    .bootstrap{
+        color: #7B11F8;
+    }
+    .mongodb{
+        color: green;
+    }
+    .socketio{
+        color: black;
+    }
+    .expressjs{
+        color: #529F41;
+    }
+}
+.skillCard:hover{
+    width: 21%;
+}
+
+
+
+
+
+
+
+
+/* styling percentagebar */
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+
+.circle-svg {
+    width: 100px;
+    height: 100px;
+    /* transform: rotate(-90deg); */
+}
+
+.purpleCircle-bg {
+    fill: none;
+    stroke: #290942;
+    stroke-width: 3.8;
+}
+
+.blackCircle-bg{
+    fill: none;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 3.8;
+}
+
+.whiteCircle-bg{
+    fill: none;
+    stroke: #BDBABA;
+    stroke-width: 3.8;
+}
+
+
+.circle {
+    fill: none;
+    stroke: #61DAFB;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.3s ease;
+}
+
+.whitePercentage{
+    color: black !important;
+    fill: black;
+}
+
+.blackPercentage, .purplePercentage{
+    fill: white;
+}
+
+.percentage {
+    /* fill: white; */
+    font-family: Arial, sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+
+
+
+
+@media (max-width: 600px){
+
+    #flexRow{
+        display: flex;
+        flex-direction: column;
+        gap: 10px !important;
+        i{
+            font-size: 40px !important;
+            margin: auto;
+        }
+    }
+    .skillCard{
+        flex-direction: column-reverse;
+        margin: 5px !important;
+    }
+    .circle-svg{
+        width:  41px !important;
+        height:  41px !important;
+        position: relative;
+        left: 9px;
+        top: -14px;
+    }
+    .circle-container{
+        height: 30vh !important;
+    }
+    .reduxLogo{
+        width: 50px !important;
+        height: 50px !important;
+        position: relative;
+        top: -7px !important;
+        left: 3px !important;
+    }
+    .skillTitle{
+        font-size: 13px !important;
+    }
+}

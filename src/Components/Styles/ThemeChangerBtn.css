@@ -1,0 +1,75 @@
+.themeBtn{
+    position: fixed;
+    border: 10px solid black;
+    top: 100px;
+    /* right: 30px; */
+    padding: 20px;
+    border-radius: 50%;
+    /* margin-left: 20px; */
+    transition: padding 0.5s;
+    cursor: pointer;
+}
+.themeButton {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.purpleBtn{
+    background-color: #551A8B;
+}
+
+.blackBtn{
+    background-color: #363535;
+}
+
+.whiteBtn{
+    background-color: #928F8F;
+}
+
+.themeBtn:hover{
+    padding: 25px;
+}
+
+#themeBtnDiv{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+
+    
+}
+
+.themeButton{
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    /* z-index: 1; */
+}
+
+#themeBtnDiv .purple{
+    right: 180px;
+    border: 1px solid #7d1dc7;
+    background-color: #7d1dc7;
+    z-index: 1;
+}
+
+#themeBtnDiv .white{
+    right: 240px;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    z-index: 1;
+}
+
+#themeBtnDiv .black{
+    right: 300px;
+    border: 1px solid black;
+    background-color: black;
+    z-index: 1;
+}

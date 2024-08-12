@@ -1,0 +1,187 @@
+#letsConnect{
+    font-family: "Aclonica", sans-serif !important;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 30px;
+
+}
+
+#contact{
+    margin-top: 130px;
+}
+
+#contactGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.purpleForm{
+
+    box-shadow: 0 2px 2px #551A8B;
+    
+    input,textarea{
+        background-color: #301744;
+        box-shadow: 0 2px 5px #551A8B;
+        color: white;
+    }
+
+    button{
+        border: 1px solid rebeccapurple;
+        color: #ECDDF5;
+    }
+}
+
+.blackForm{
+    box-shadow: 0 2px 2px #3f3e3e;
+
+    input,textarea{
+        background-color: #222121;
+        box-shadow: 0 2px 5px #3f3e3e;
+        color: white;
+    }
+
+    button{
+        border: 1px solid #222121;
+        color: white;
+    }
+}
+/* BDBABA */
+.whiteForm{
+    box-shadow: 0 2px 2px #3f3e3e;
+
+    input,textarea{
+        background-color: #dad7d7;
+        box-shadow: 0 2px 5px #3f3e3e;
+        color: black;
+    }
+
+    button{
+        border: 1px solid #222121;
+        color: black;
+    }
+}
+
+#contactForm{
+    padding: 70px;
+    margin: auto;
+    text-align: center;
+    padding-right: 100px;
+
+    input, textarea{
+        width: 100%;
+        padding: 20px;
+        border: none;
+    }
+    
+    button{
+    background-color: transparent;
+    padding: 10px;
+    transition: border 0.5s;
+    cursor: pointer;
+    border-radius: 60px;
+    margin-left: 30px;
+    }
+
+    form{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+#leftContact{
+    margin-top: 30px;
+    max-width: 100%;
+
+    p{
+        text-align: center;
+        line-height: 1.8;
+        /* font-family: "Cormorant Garamond", serif; */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+    }
+    #contactThank{
+        font-size: 20px !important;
+    }
+
+    .purpleContacts{
+        border: 2px solid #301744;
+        padding: 20px 0px;
+        margin: 20px;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+        
+    }
+
+    .blackContacts{
+        border: 2px solid #222121;
+        padding: 20px 0px;
+        margin: 20px;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+        
+    }
+
+    .whiteContacts{
+        border: 2px solid #BDBABA;
+        padding: 20px 0px;
+        margin: 20px;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+        
+    }
+}
+
+
+
+@media (max-width:600px){
+
+    #letsConnect{
+        font-size: 30px !important;
+    }
+    #contactGrid{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto;
+        row-gap: 20px !important;
+    }
+    #leftContact{
+        p{
+            font-size: 10px !important;
+        }
+    }
+    #contactThank{
+        max-width: 70vw !important;
+        font-size: 15px !important;
+        margin: auto;
+    }
+    .contacts{
+        padding: 10px 0px !important;
+        max-width: 40vw !important;
+        margin: 11px auto !important;
+    }
+}

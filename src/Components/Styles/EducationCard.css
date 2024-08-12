@@ -1,0 +1,91 @@
+#card{
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 15px !important;
+    width: 85%;
+    /* color: #360942; */
+    transition: width 0.5s;
+
+
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 14px;
+        margin-bottom: 0%;
+    }
+}
+
+.purpleCard{
+    border: 0px solid #D6C36E;
+    background-color: #2a0949;
+}
+
+.blackCard{
+    border: 0px solid #222121;
+    /* background-color: #222121; */
+}
+
+.whiteCard{
+    /* background-color: rgb(245, 243, 244) !important; */
+    border: 0px solid #2b4074;
+}
+
+#card:hover{
+    width: 90%;
+}
+
+.purpleCard:hover{   
+    box-shadow: 0 5px 5px #551A8B;
+}
+
+.blackCard:hover{   
+    box-shadow: 0 5px 5px rgb(54, 53, 53);
+}
+
+.whiteCard:hover{   
+    box-shadow: 0 5px 5px rgb(146, 143, 143);
+}
+
+#cardHeading{
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 20px;
+    line-height: 1.3 !important;
+}
+
+#institute{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: #8d8b8b;
+}
+
+#cardDuration{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    font-size: 12px;
+}
+
+#cardScore{
+    font-family:cursive !important;
+    font-size: small;
+}
+
+
+
+@media (max-width: 600px){
+
+    #card{
+        margin-left: -4px !important;
+        p{
+            font-size: 13px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+        }
+    }
+    .flex{
+        p{
+            font-size: 10px !important;
+        }
+    }
+}

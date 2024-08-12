@@ -1,0 +1,113 @@
+#footer{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    max-width: 100%;
+  }
+  
+.purpleFooter{
+    background-color: #220639fc !important;
+}
+
+.blackFooter{
+  background-color: #161616 !important;
+}
+
+.whiteFooter{
+  background-color: #BDBABA !important;
+  color: black !important;
+
+  #btns{
+    button{
+      color: black !important;
+    }
+  }
+}
+
+
+#btns{
+    display: flex;
+    justify-content: center;
+
+    button{
+        
+    border: 0;
+    background-color: transparent;
+    color: #ECDDF5;
+    padding: 10px;
+    transition: border 0.5s;
+    cursor: pointer;
+    }
+}
+.purplePara .fa-heart{
+    color: #D6C376;
+}
+
+.blackPara .fa-heart{
+  color: #FE2121;
+}
+
+.whitePara .fa-heart{
+  color: #00247C;
+}
+
+#para{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+#purpleIcons{
+    
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+
+  a{
+    i{
+        
+    font-size: 30px;
+    margin: 0px 20px;
+    text-decoration: none;
+    color: #551A8B !important;
+    }
+  }
+}
+
+#blackIcons{
+    
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+
+  a{
+    i{
+        
+    font-size: 30px;
+    margin: 0px 20px;
+    text-decoration: none;
+    color: #363535 !important;
+    }
+  }
+}
+
+#whiteIcons{
+    
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+
+  a{
+    i{
+        
+    font-size: 30px;
+    margin: 0px 20px;
+    text-decoration: none;
+    color: #928F8F !important;
+    }
+  }
+}
+

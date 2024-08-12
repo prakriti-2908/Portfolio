@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+#home {
+  max-width: 90%;
+  height: 35vh;
+  margin-top: 20px;
+  padding: 40px 80px;
+  font-size: 40px;
+  font-style: normal;
+  font-family: "Aclonica", sans-serif;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 0px;
+  p{
+    margin-bottom: 35px;
+  }
+}
+/* 
+.downloadable{
+  display: flex;
+  justify-content: center;
+  gap: 0px !important;
+  max-width: 50%;
+  margin-top: 20px;
+} */
+
+/* .resume{
+  margin-right: 0px !important;
+  margin-left: 50px !important;
+} */
+
+#Abouticons{
+  width: 50%;
+  text-align: center;
+}
+
+#aboutPara i{
+  
+    font-size: 30px;
+    margin: 0px 20px;
+    text-decoration: none;
+    /* color: #551A8B !important; */
+  
+}
+#aboutPara.purpleBg i{
+  color: #551A8B !important;
+}
+
+#aboutPara.blackBg i{
+  color: rgb(54, 53, 53) !important;
+}
+
+#aboutPara.whiteBg i{
+  color: rgb(146, 143, 143) !important;
+}
+
+#summary{
+  width: 50%;
+  font-size: large;
+  font-family: "Cormorant Garamond", serif;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+#developer{
+  font-family: "Alegreya",serif;
+  font-size: 30px;
+
+}
+
+#prakriti{
+  font-size: larger;
+}
+.purpleBgResume{
+  text-decoration: none;
+  color: #d6c376;
+  font-size: 70%;
+  margin: 20px 20%;
+  display: block;
+}
+
+.blackBgResume{
+  text-decoration: none;
+  color: #FE2121;
+  font-size: 70%;
+  margin: 20px 20%;
+  display: block;
+}
+
+.whiteBgResume{
+  text-decoration: none;
+  color: #00247C;
+  font-size: 70%;
+  margin: 20px 20%;
+  display: block;
+}
+
+
+#reactLogo{
+  position: relative;
+  top: -18px;
+  right: 280px;
+  img{
+    width: 170%;
+    animation: rotateLogo 10s linear infinite;
+  }
+}
+@keyframes rotateLogo{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(180deg);}
+}
+
+#hello {
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+  font-family: "Alegreya",serif;
+  font-size: 30px;
+ 
+}
+
+  @media (max-width: 600px) {
+    #home{
+      margin-top: 516px;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 30px;
+  
+      #reactLogo{
+        left: 35px;
+        img{
+          max-width: 150px;
+        }
+      }
+    }
+  
+    #hello{
+      font-size: 20px !important;
+    }
+    #prakriti{
+      font-size: 30px !important;
+    }
+    #developer{
+      font-size: 20px !important;
+    }
+    #summary{
+      width: 70vw !important; 
+      font-size: 15px !important;
+    }
+    #Abouticons{
+      width: 70vw !important;
+    }
+    .resume{
+      margin-left: 64px !important;
+    }
+    
+  }
+
+
+

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+#header{
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* box-shadow: 0 2px 5px #791cc5; */
+    max-width: 100% !important;
+}
+
+#header.purpleBg {
+    box-shadow: 0px 2px 5px #791cc5;
+}
+
+#header.blackBg {
+    box-shadow: 0px 2px 15px #363535;
+}
+
+#header.whiteBg {
+    box-shadow: 0px 2px 5px #9f9ca0;
+}
+
+nav {
+    display: flex;
+    max-width: 100% !important;
+    justify-content: space-between;
+    padding: 30px 50px;
+    margin-top: 0px !important;
+    background-color: #220639fc;
+    padding: 10px;
+}
+
+.lor{
+    text-decoration: none;
+    color: white;
+}
+
+#myName {
+    cursor: pointer;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.purpleBg span {
+    color: #D6C376 !important;
+}
+
+.whiteBg span{
+    color: #00247C;
+}
+
+
+
+#flag img {
+    width: 50px;
+    border-radius: 38%;
+}
+
+.purpleBgBtn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.purpleBgBtn button {
+    border: 0;
+    background-color: transparent;
+    color: #ECDDF5;
+    padding: 10px;
+    transition: border 0.5s;
+    cursor: pointer;
+}
+
+.purpleBgBtn button:hover {
+    border: 1px solid rebeccapurple;
+    border-radius: 60px;
+}
+
+
+.whiteBgBtn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.whiteBgBtn button {
+    border: 0;
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    transition: border 0.5s;
+    cursor: pointer;
+}
+
+.whiteBgBtn button:hover {
+    border: 1px solid rgb(40, 39, 41);
+    border-radius: 60px;
+}
+
+
+.blackBgBtn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.blackBgBtn button {
+    border: 0;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    transition: border 0.5s;
+    cursor: pointer;
+}
+
+.blackBgBtn button:hover {
+    border: 1px solid rgb(40, 39, 41);
+    border-radius: 60px;
+}
+
+
+
+@media (max-width: 600px) {
+    
+    #myName{
+        width: 40vw;
+        margin-left: 0px !important;
+        h1{
+            font-size: 30px;
+        }
+    }
+    nav{
+        max-width: 100% !important;
+        padding: 30px !important;
+        gap: 50px !important;
+    }
+    #navBtns button{
+        display: none;
+    }
+}
