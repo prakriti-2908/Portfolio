@@ -81,4 +81,7 @@
         right: 50px;
         z-index: 2;
     }
+    .themeBtn{
+        top: 650px;
+    }
 }
