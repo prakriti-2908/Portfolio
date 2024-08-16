@@ -21,6 +21,7 @@
     box-shadow: 0px 2px 5px #9f9ca0;
 }
 
+
 nav {
     display: flex;
     max-width: 100% !important;
@@ -137,7 +138,7 @@ nav {
         padding: 30px !important;
         gap: 50px !important;
     }
-    #navBtns button{
+    #header button{
         display: none;
     }
 }

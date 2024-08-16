@@ -6,7 +6,6 @@ function ExtraDocs(){
 
     const{theme} = useContext(ThemeContext);
 
-
     return(
         <div id='moreDocs'>
             <h2 id="extraDocs" className={`${theme}Bg`}>Download <span>More Documents</span></h2>

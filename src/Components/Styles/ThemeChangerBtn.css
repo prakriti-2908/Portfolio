@@ -73,3 +73,12 @@
     background-color: black;
     z-index: 1;
 }
+
+@media (max-width: 600px){
+    .themeButton{
+        position: fixed;
+        top: 650px;
+        right: 50px;
+        z-index: 2;
+    }
+}

@@ -59,3 +59,12 @@
 
     
 }
+
+
+@media (max-width: 600px){
+    .extraDocs a{
+        font-size: smaller;
+        padding: 10px;
+        min-width: 200px;
+    }
+}

@@ -91,4 +91,7 @@ html {
     padding: 0px !important;
     
   }
+  .smallBall .ball{
+    display: none;
+  }
 }

@@ -37,13 +37,14 @@ function IntroEdu(){
             <div id="gridd">
                 <div className={`${theme}Intro`}>
                     <h2 className="gridHeader">Introduction</h2>
-                    <p>I'm Prakriti Jha. I'm from Delhi. I will be graduating with BTech in Electronic and Communication Engineerng from GGSIPU in August, 2024. 
+                    <p>I graduated from GGSIPU in Electronics and Communication Engineering. During my studies, I worked on projects like a Smart Energy Monitoring System and an Obstacle Avoidance Car. My research on the Smart Energy Monitoring System was published at NCBISF.
                     <br />
                     <br />
-                    Currently, I'm immersed in learning the MERN stack at Accio Job, where I'm sharpening my skills in JavaScript, React, HTML, and CSS. With proficiency in Redux, SCSS, and Tailwind CSS, I've embarked on numerous personal projects to refine my craft.
+                    My interest in computer science grew as I learned Object-Oriented Programming in JavaScript. I soon delved into web development, starting with HTML and CSS, and progressing to frameworks like React.js and server-side technologies like Node.js.
                     <br />
                     <br />
-                    Now, I'm eagerly seeking entry-level opportunities as a frontend developer to apply my expertise and contribute to impactful projects.
+                    I believe in learning by doing. To apply my skills, I developed projects such as Chatterbox, UrSoulVoice, and a Car Racing Game, which helped solidify my understanding of web development.
+
                     </p>
                 </div>
                 <div className={`${theme}Education`}>
